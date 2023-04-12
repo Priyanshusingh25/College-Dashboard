@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="logo-details">
+            <span class="logo_name">JSPM JSCOE</span>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="#" class="active">
+                    <i class='bx bx-grid-alt'></i>
+                    <span class="links_name">Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-box'></i>
+                    <span class="links_name">About</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-list-ul'></i>
+                    <span class="links_name">Admissions</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-pie-chart-alt-2'></i>
+                    <span class="links_name">Academics</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-coin-stack'></i>
+                    <span class="links_name">Placements</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-book-alt'></i>
+                    <span class="links_name">Campus Life</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-user'></i>
+                    <span class="links_name">Students Innovation Lab</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-message'></i>
+                    <span class="links_name">Contacks</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-heart'></i>
+                    <span class="links_name">Students</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-cog'></i>
+                    <span class="links_name">Faculty</span>
+                </a>
+            </li>
+            <li class="log_out">
+                <a href="#">
+                    <i class='bx bx-log-out'></i>
+                    <span class="links_name">Log Out</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <section class="home-section">
+        <nav>
+            <div class="sidebar-button">
+                <i class='bx bx-menu sidebarBtn'></i>
+                <span class="dashboard">Dashboard</span>
+            </div>
+            <div class="search-box">
+                <input type="text" placeholder="Search...">
+                <i class='bx bx-search'></i>
+            </div>
+            <div class="profile-details">
+                <span class="admin_name">Priyanshu Singh</span>
+                <i class='bx bx-chevron-down'></i>
+            </div>
+        </nav>
+
+        <div class="home-content">
+            <div class="overview-boxes">
+                <div class="box">
+                    <div class="right-side">
+                        <div class="box-topic">Companies</div>
+                        <div class="number"></div>
+                        <div class="indicator">
+                            <i class='bx bx-up-arrow-alt'></i>
+                            <span class="text">Up from yesterday</span>
+                        </div>
+                    </div>
+                    <i class='bx bx-cart-alt cart'></i>
+                </div>
+                <div class="box">
+                    <div class="right-side">
+                        <div class="box-topic">Total Students</div>
+                        <div class="number"></div>
+                        <div class="indicator">
+                            <i class='bx bx-up-arrow-alt'></i>
+                            <span class="text">Up from yesterday</span>
+                        </div>
+                    </div>
+                    <i class='bx bxs-cart-add cart two'></i>
+                </div>
+                <div class="box">
+                    <div class="right-side">
+                        <div class="box-topic">Gallary</div>
+                        <div class="number"></div>
+                        <div class="indicator">
+                            <i class='bx bx-up-arrow-alt'></i>
+                            <span class="text">Up from yesterday</span>
+                        </div>
+                    </div>
+                    <i class='bx bx-cart cart three'></i>
+                </div>
+                <div class="box">
+                    <div class="right-side">
+                        <div class="box-topic">360 view</div>
+                        <div class="number"></div>
+                        <div class="indicator">
+                            <i class='bx bx-down-arrow-alt down'></i>
+                            <span class="text"></span>
+                        </div>
+                    </div>
+                    <i class='bx bxs-cart-download cart four'></i>
+                </div>
+            </div>
+        </div>
+        <div class="pie-wrap">
+
+            <div class="light-yellow entry">
+                <p>25%</p>
+                <p class="entry-value">Capgemini</p>
+            </div>
+
+            <div class="sky-blue entry">
+                <p>25%</p>
+                <p class="entry-value">TCS</p>
+            </div>
+
+            <div class="pink entry">
+                <p>12.5%</p>
+                <p class="entry-value">Infosys </p>
+            </div>
+
+            <div class="purple entry">
+                <p> 12.5%</p>
+                <p class="entry-value">HHexchange</p>
+            </div>
+
+            <div class="green entry">
+                <p> 12.5%</p>
+                <p class="entry-value">IBM</p>
+            </div>
+
+            <div class="wheat entry">
+                <p> 12.5%</p>
+                <p class="entry-value">L&T</p>
+            </div>
+
+        </div>
+    </section>
+
+    <script>
+        let sidebar = document.querySelector(".sidebar");
+        let sidebarBtn = document.querySelector(".sidebarBtn");
+        sidebarBtn.onclick = function() {
+            sidebar.classList.toggle("active");
+            if (sidebar.classList.contains("active")) {
+                sidebarBtn.classList.replace("bx-menu", "bx-menu-alt-right");
+            } else
+                sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+        }
+    </script>
+
+</body>
+
+</html>
