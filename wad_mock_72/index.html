@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="sidebar">
+    <div class="logo-details">
+      <span class="logo_name">Jspm Jscoe</span>
+    </div>
+      <ul class="nav-links">
+        <li>
+          <a href="#" class="active">
+            <span class="links_name">360 view</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="links_name">Home</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="links_name">About </span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="links_name">Admissions</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="links_name">Alumini</span>
+          </a>
+        </li>
+   
+        <li class="log_out">
+          <a href="#">
+            <span class="links_name">Log out</span>
+          </a>
+        </li>
+      </ul>
+  </div>
+  <section class="home-section">
+    <nav>
+      <div class="sidebar-button">
+        <i class='bx bx-menu sidebarBtn'></i>
+        <span class="dashboard">Dashboard</span>
+      </div>
+      <div class="search-box">
+        <input type="text" placeholder="Search...">
+        <i class='bx bx-search' ></i>
+      </div>
+      <div class="profile-details">
+        <span class="admin_name">Priyanshu Singh</span>
+      </div>
+    </nav>
+
+    <div class="home-content">
+      <div class="overview-boxes">
+        <div class="box">
+          <div class="right-side">
+            <div class="box-topic">Students</div>
+            <div class="number"></div>
+            <div class="indicator">
+              <span class="text"></span>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="right-side">
+            <div class="box-topic">Facilities</div>
+            <div class="number"></div>
+            <div class="indicator">
+              <span class="text"></span>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="right-side">
+            <div class="box-topic">Campuses</div>
+            <div class="number"></div>
+            <div class="indicator">
+              <span class="text"></span>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="right-side">
+            <div class="box-topic">Contact</div>
+            <div class="number"></div>
+            <div class="indicator">
+              <span class="text"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="boxes">
+        <div class="recent-sales box">
+          <div class="title"></div>
+          <div class="placements-details">
+            <ul class="details">
+            
+
+<h1>Major Recruiters</h1>
+
+<div id="my-pie-chart-container">
+  <div id="my-pie-chart"></div>
+
+  <div id="legenda">
+    <div class="entry">
+      <div id="color-brown" class="entry-color"></div>
+      <div class="entry-text">Capgemini</div>
+    </div>
+    <div class="entry">
+      <div id="color-black" class="entry-color"></div>
+      <div class="entry-text">TCS</div>
+    </div>
+    <div class="entry">
+      <div id="color-blue" class="entry-color"></div>
+      <div class="entry-text">Infosys</div>
+    </div>
+    <div class="entry">
+      <div id="color-green" class="entry-color"></div>
+      <div class="entry-text">Amazon</div>
+    </div>
+    <div class="entry">
+      <div id="color-yellow" class="entry-color"></div>
+      <div class="entry-text">Cisco</div>
+    </div>
+  </div>
+</div>
+
+
+            <ul class="details">
+            <li class="topic">Branches</li>
+            <li><a href="#"></a>Hadapsar</li>
+            <li><a href="#"></a>Narhe</li>
+            <li><a href="#"></a>Wagholi</li>
+          </ul>
+          <ul class="details">
+            <li class="topic">Streams Present</li>
+            <li><a href="#">Information Technology</a></li>
+            <li><a href="#">Mechanical</a></li>
+            <li><a href="#">Computer</a></li>
+            <li><a href="#">Civil</a></li>
+            <li><a href="#">E & TC</a></li>
+            <li><a href="#">Computer</a></li>
+       
+        
+        </div>
+          <div class="button">
+            <a href="#">See All</a>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <script>
+   let sidebar = document.querySelector(".sidebar");
+let sidebarBtn = document.querySelector(".sidebarBtn");
+sidebarBtn.onclick = function() {
+  sidebar.classList.toggle("active");
+  if(sidebar.classList.contains("active")){
+  sidebarBtn.classList.replace("bx-menu" ,"bx-menu-alt-right");
+}else
+  sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+}
+ </script>
+
+</body>
+</html>
+
